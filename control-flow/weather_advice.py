@@ -1,4 +1,4 @@
-user_input = input(" What's the weather like today? (sunny/rainy/cold):")
+user_input = input("What's the weather like today? (sunny/rainy/cold):")
 
 
 if user_input == "sunny":
