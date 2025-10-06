@@ -7,6 +7,8 @@ def safe_divide(numerator, denominator):
         return f"The result of dividing {num} by {den} is {result}"
 
     except ZeroDivisionError:
-        return "Error: Division by zero is not allowed."
+        print("Error: Cannot divide by zero.")
+        return None
     except ValueError:
-        return "Error: Both inputs must be numbers."
+        print("Error: Both inputs must be numbers.")
+        return None
