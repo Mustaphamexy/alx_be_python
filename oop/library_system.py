@@ -6,6 +6,12 @@ class Book:
     def get_details(self):
         return f"Book: {self.title} by {self.author}"
 
+    def __str__(self):
+        """
+        Returns a user-friendly string representation of the book.
+        """
+        return self.get_details()
+
 
 class PrintBook(Book):
     def __init__(self, title, author, page_count):
@@ -34,4 +40,4 @@ class Library:
 
     def list_books(self):
         for book in self.books:
-            print(book.get_details())
+            print(book)
