@@ -19,7 +19,7 @@ class PrintBook(Book):
         self.page_count = page_count
 
     def get_details(self):
-        return f"PrintBook: {self.title} by {self.author}, Pages: {self.page_count}"
+        return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}"
 
 
 class EBook(Book):
